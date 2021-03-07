@@ -1,4 +1,4 @@
-## [live app](http://saad-saif-covid-tracker-bootcamp2020.surge.sh)
+## [live app](http://saad-saif-shoes-store-bootcamp2020.surge.sh)
 
 ---
 
