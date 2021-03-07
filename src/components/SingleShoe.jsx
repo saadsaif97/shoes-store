@@ -30,12 +30,16 @@ const shoes = {
 
 const SingleShoe = () => {
   const { slug } = useParams()
-  const { name, img, price, description } = shoes[slug]
-
   let navigate = useNavigate()
   function backToShoes() {
     navigate('/shoes')
   }
+
+  if (!shoes[slug]) {
+    return <h1>Sorry no, shoe found with this name</h1>
+  }
+
+  const { name, img, price, description } = shoes[slug]
 
   return (
     <div>
