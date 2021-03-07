@@ -25,10 +25,10 @@ function App() {
       <div className='container'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/shoes' element={<Shoes />}>
-            <Route to='/' element={<ShoesIndex />} />
-            <Route to='/:slug' element={<SingleShoe />} />
+          <Route path='about' element={<About />} />
+          <Route path='shoes' element={<Shoes />}>
+            <Route path='/' element={<ShoesIndex />} />
+            <Route path=':slug' element={<SingleShoe />} />
           </Route>
           <Route path='*' element={<NotFound />} />
         </Routes>

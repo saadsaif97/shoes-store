@@ -24,6 +24,7 @@ ul {
 
 img {
   max-width: 200px;
+  display: block;
 }
 
 .container {

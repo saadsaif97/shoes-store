@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { useParams, useNavigate } from 'react-router-dom'
 
 const shoes = {
   'air-jordan-3-valor-blue': {
@@ -21,10 +21,18 @@ const shoes = {
 
 const SingleShoe = () => {
   const { slug } = useParams()
+  const { name, img } = shoes[slug]
+
+  let navigate = useNavigate()
+  function backToShoes() {
+    navigate('/shoes')
+  }
 
   return (
     <div>
-      <h1>{slug}</h1>
+      <h1>{name}</h1>
+      <img src={img} alt={slug} />
+      <button onClick={backToShoes}>← Back</button>
     </div>
   )
 }
