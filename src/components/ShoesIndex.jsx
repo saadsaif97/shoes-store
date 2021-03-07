@@ -25,12 +25,13 @@ const ShoesIndex = () => {
       <h1>Shoes index</h1>
       <ul>
         {Object.entries(shoes).map(([slug, { name, img }]) => (
-          <Link to={`/shoes/${slug}`} key={slug}>
-            <li>
+          <li key={slug}>
+            <Link to={`/shoes/${slug}`}>
               <h3>{name}</h3>
               <img src={img} alt={slug} />
-            </li>
-          </Link>
+              <hr />
+            </Link>
+          </li>
         ))}
       </ul>
     </div>

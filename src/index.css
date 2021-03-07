@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.active {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
 ul,
 li {
   margin: 0;
@@ -23,7 +29,8 @@ ul {
 }
 
 img {
-  max-width: 200px;
+  max-width: 500px;
+  margin: 0 auto;
   display: block;
 }
 
